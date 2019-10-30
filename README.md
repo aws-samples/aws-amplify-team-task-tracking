@@ -10,6 +10,7 @@ Team task project can help you track those items and ensure all team members act
 
 We would be using following architecture to develop this tool
 
+![AppsyncTeamTasks](https://user-images.githubusercontent.com/5582133/67894816-59f29800-fb7f-11e9-89fa-ec6072509219.jpg) 
 
 
 
@@ -190,7 +191,7 @@ ng serve
 
 We should be able to see the following screen when we navigate to http://localhost:4200/
 
-
+![Stubs](https://user-images.githubusercontent.com/5582133/67894817-5a8b2e80-fb7f-11e9-945a-e4acdbef171f.png)
 
 
 I click on various menu to check if the routing is working properly
@@ -524,7 +525,7 @@ amplify status
 
 Output shown should be similar as shown below
 
-
+![amplify_status](https://user-images.githubusercontent.com/5582133/67894809-58c16b00-fb7f-11e9-8b45-ec429a54e812.png)
 
 I will now publish this resources by running following command
 
@@ -641,6 +642,7 @@ Let us test the application locally by running ng serve
 
 I am displayed the default login page as below
 
+![amplify-auth](https://user-images.githubusercontent.com/5582133/67894810-595a0180-fb7f-11e9-8398-f937b9ce0c35.png)
 
 
 I will create a user by clicking Create account link. Once I create a user with email from whitelist domain , i can proceed with login in access the dashboard page. I can navigate across pages and logout of the system.
@@ -1039,17 +1041,20 @@ I click save and deploy button
 
 Now our pipeline is ready for dev branch. Now when ever i make any code changes and do a push to dev branch, the build is triggered and latest application is available in the URL mentioned.
 
+![amplifyConsole1](https://user-images.githubusercontent.com/5582133/67894812-595a0180-fb7f-11e9-98bb-b9ccfbb80113.png)
+
+![amplifyConsole2](https://user-images.githubusercontent.com/5582133/67894813-595a0180-fb7f-11e9-958d-aa705e4d81dc.png)
 
 
 I now will click on the application URL (similar to https://dev.xxxxxxxxxxxx.amplifyapp.com/) mentioned on the AWS amplify Console. 
 
 Login page will be displayed as mentioned above. Once I log in,  I am displayed dashboard screen.
 
-
+![app-screenshot1](https://user-images.githubusercontent.com/5582133/67894814-59f29800-fb7f-11e9-8a0e-40b64031d8ab.png)
 
 I can now navigate using menu or click on the tasks. Now i click Weekly tasks button in dashboard and navigate to check what are all my weekly tasks for current week
 
-
+![app-screenshot2](https://user-images.githubusercontent.com/5582133/67894815-59f29800-fb7f-11e9-87e0-ade821dc4e02.png)
 
 
 I can now choose to mark the task as complete. I can also add/remove comments for a task
