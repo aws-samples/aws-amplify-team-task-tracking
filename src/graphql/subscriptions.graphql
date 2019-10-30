@@ -1,0 +1,586 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateReminder {
+  onCreateReminder {
+    id
+    user
+    customer
+    start
+    month
+    week
+    year
+    additionalAttribute
+    type
+    tasks {
+      items {
+        id
+        title
+        description
+        status
+      }
+      nextToken
+    }
+  }
+}
+subscription OnUpdateReminder {
+  onUpdateReminder {
+    id
+    user
+    customer
+    start
+    month
+    week
+    year
+    additionalAttribute
+    type
+    tasks {
+      items {
+        id
+        title
+        description
+        status
+      }
+      nextToken
+    }
+  }
+}
+subscription OnDeleteReminder {
+  onDeleteReminder {
+    id
+    user
+    customer
+    start
+    month
+    week
+    year
+    additionalAttribute
+    type
+    tasks {
+      items {
+        id
+        title
+        description
+        status
+      }
+      nextToken
+    }
+  }
+}
+subscription OnCreateTask {
+  onCreateTask {
+    id
+    title
+    description
+    status
+    reminder {
+      id
+      user
+      customer
+      start
+      month
+      week
+      year
+      additionalAttribute
+      type
+      tasks {
+        nextToken
+      }
+    }
+    comments {
+      items {
+        id
+        content
+        addedby
+        addedon
+      }
+      nextToken
+    }
+    mandatorycomment {
+      items {
+        id
+        title
+        content
+        addedby
+        addedon
+      }
+      nextToken
+    }
+  }
+}
+subscription OnUpdateTask {
+  onUpdateTask {
+    id
+    title
+    description
+    status
+    reminder {
+      id
+      user
+      customer
+      start
+      month
+      week
+      year
+      additionalAttribute
+      type
+      tasks {
+        nextToken
+      }
+    }
+    comments {
+      items {
+        id
+        content
+        addedby
+        addedon
+      }
+      nextToken
+    }
+    mandatorycomment {
+      items {
+        id
+        title
+        content
+        addedby
+        addedon
+      }
+      nextToken
+    }
+  }
+}
+subscription OnDeleteTask {
+  onDeleteTask {
+    id
+    title
+    description
+    status
+    reminder {
+      id
+      user
+      customer
+      start
+      month
+      week
+      year
+      additionalAttribute
+      type
+      tasks {
+        nextToken
+      }
+    }
+    comments {
+      items {
+        id
+        content
+        addedby
+        addedon
+      }
+      nextToken
+    }
+    mandatorycomment {
+      items {
+        id
+        title
+        content
+        addedby
+        addedon
+      }
+      nextToken
+    }
+  }
+}
+subscription OnCreateComment {
+  onCreateComment {
+    id
+    content
+    addedby
+    addedon
+    post {
+      id
+      title
+      description
+      status
+      reminder {
+        id
+        user
+        customer
+        start
+        month
+        week
+        year
+        additionalAttribute
+        type
+      }
+      comments {
+        nextToken
+      }
+      mandatorycomment {
+        nextToken
+      }
+    }
+  }
+}
+subscription OnUpdateComment {
+  onUpdateComment {
+    id
+    content
+    addedby
+    addedon
+    post {
+      id
+      title
+      description
+      status
+      reminder {
+        id
+        user
+        customer
+        start
+        month
+        week
+        year
+        additionalAttribute
+        type
+      }
+      comments {
+        nextToken
+      }
+      mandatorycomment {
+        nextToken
+      }
+    }
+  }
+}
+subscription OnDeleteComment {
+  onDeleteComment {
+    id
+    content
+    addedby
+    addedon
+    post {
+      id
+      title
+      description
+      status
+      reminder {
+        id
+        user
+        customer
+        start
+        month
+        week
+        year
+        additionalAttribute
+        type
+      }
+      comments {
+        nextToken
+      }
+      mandatorycomment {
+        nextToken
+      }
+    }
+  }
+}
+subscription OnCreateMandatoryComment {
+  onCreateMandatoryComment {
+    id
+    title
+    content
+    addedby
+    addedon
+    task {
+      id
+      title
+      description
+      status
+      reminder {
+        id
+        user
+        customer
+        start
+        month
+        week
+        year
+        additionalAttribute
+        type
+      }
+      comments {
+        nextToken
+      }
+      mandatorycomment {
+        nextToken
+      }
+    }
+  }
+}
+subscription OnUpdateMandatoryComment {
+  onUpdateMandatoryComment {
+    id
+    title
+    content
+    addedby
+    addedon
+    task {
+      id
+      title
+      description
+      status
+      reminder {
+        id
+        user
+        customer
+        start
+        month
+        week
+        year
+        additionalAttribute
+        type
+      }
+      comments {
+        nextToken
+      }
+      mandatorycomment {
+        nextToken
+      }
+    }
+  }
+}
+subscription OnDeleteMandatoryComment {
+  onDeleteMandatoryComment {
+    id
+    title
+    content
+    addedby
+    addedon
+    task {
+      id
+      title
+      description
+      status
+      reminder {
+        id
+        user
+        customer
+        start
+        month
+        week
+        year
+        additionalAttribute
+        type
+      }
+      comments {
+        nextToken
+      }
+      mandatorycomment {
+        nextToken
+      }
+    }
+  }
+}
+subscription OnCreateCustomer {
+  onCreateCustomer {
+    id
+    customername
+    user
+    groupsCanAccess
+  }
+}
+subscription OnUpdateCustomer {
+  onUpdateCustomer {
+    id
+    customername
+    user
+    groupsCanAccess
+  }
+}
+subscription OnDeleteCustomer {
+  onDeleteCustomer {
+    id
+    customername
+    user
+    groupsCanAccess
+  }
+}
+subscription OnCreateReminderMetaData {
+  onCreateReminderMetaData {
+    id
+    type
+    tasks {
+      items {
+        id
+        title
+        description
+        groupsCanAccess
+      }
+      nextToken
+    }
+    groupsCanAccess
+  }
+}
+subscription OnUpdateReminderMetaData {
+  onUpdateReminderMetaData {
+    id
+    type
+    tasks {
+      items {
+        id
+        title
+        description
+        groupsCanAccess
+      }
+      nextToken
+    }
+    groupsCanAccess
+  }
+}
+subscription OnDeleteReminderMetaData {
+  onDeleteReminderMetaData {
+    id
+    type
+    tasks {
+      items {
+        id
+        title
+        description
+        groupsCanAccess
+      }
+      nextToken
+    }
+    groupsCanAccess
+  }
+}
+subscription OnCreateTaskMetaData {
+  onCreateTaskMetaData {
+    id
+    title
+    description
+    reminder {
+      id
+      type
+      tasks {
+        nextToken
+      }
+      groupsCanAccess
+    }
+    mandatorycomments {
+      items {
+        id
+        title
+        groupsCanAccess
+      }
+      nextToken
+    }
+    groupsCanAccess
+  }
+}
+subscription OnUpdateTaskMetaData {
+  onUpdateTaskMetaData {
+    id
+    title
+    description
+    reminder {
+      id
+      type
+      tasks {
+        nextToken
+      }
+      groupsCanAccess
+    }
+    mandatorycomments {
+      items {
+        id
+        title
+        groupsCanAccess
+      }
+      nextToken
+    }
+    groupsCanAccess
+  }
+}
+subscription OnDeleteTaskMetaData {
+  onDeleteTaskMetaData {
+    id
+    title
+    description
+    reminder {
+      id
+      type
+      tasks {
+        nextToken
+      }
+      groupsCanAccess
+    }
+    mandatorycomments {
+      items {
+        id
+        title
+        groupsCanAccess
+      }
+      nextToken
+    }
+    groupsCanAccess
+  }
+}
+subscription OnCreateMandatoryCommentMetaData {
+  onCreateMandatoryCommentMetaData {
+    id
+    title
+    task {
+      id
+      title
+      description
+      reminder {
+        id
+        type
+        groupsCanAccess
+      }
+      mandatorycomments {
+        nextToken
+      }
+      groupsCanAccess
+    }
+    groupsCanAccess
+  }
+}
+subscription OnUpdateMandatoryCommentMetaData {
+  onUpdateMandatoryCommentMetaData {
+    id
+    title
+    task {
+      id
+      title
+      description
+      reminder {
+        id
+        type
+        groupsCanAccess
+      }
+      mandatorycomments {
+        nextToken
+      }
+      groupsCanAccess
+    }
+    groupsCanAccess
+  }
+}
+subscription OnDeleteMandatoryCommentMetaData {
+  onDeleteMandatoryCommentMetaData {
+    id
+    title
+    task {
+      id
+      title
+      description
+      reminder {
+        id
+        type
+        groupsCanAccess
+      }
+      mandatorycomments {
+        nextToken
+      }
+      groupsCanAccess
+    }
+    groupsCanAccess
+  }
+}

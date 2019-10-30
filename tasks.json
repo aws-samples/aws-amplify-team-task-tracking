@@ -1,0 +1,94 @@
+
+  {
+    "id": "1",
+    "__typename": "TaskMetaData",
+    "createdAt": "2019-07-16T12:30:02.526Z",
+    "description": "Review customer support tickets for this week and ensure there are no escalations",
+    "taskMetaDataReminderId": "1",
+    "title": "Review support tickets",
+    "updatedAt": "2019-07-16T12:30:02.526Z",
+    "groupsCanAccess": [
+    "user"
+    ]
+  }
+
+  {
+    "id": "2",
+    "__typename": "TaskMetaData",
+    "createdAt": "2019-07-16T12:30:02.526Z",
+    "description": "Review highest volume channel in CRM",
+    "taskMetaDataReminderId": "1",
+    "title": "Review Channel",
+    "updatedAt": "2019-07-16T12:30:02.526Z",
+    "groupsCanAccess": [
+    "user"
+    ]
+  }
+
+
+  {
+    "id": "3",
+    "__typename": "TaskMetaData",
+    "createdAt": "2019-07-16T12:30:02.526Z",
+    "description": "Categorize and review  leads by sales revenue",
+    "taskMetaDataReminderId": "1",
+    "title": "Review leads",
+    "updatedAt": "2019-07-16T12:30:02.526Z",
+    "groupsCanAccess": [
+    "user"
+    ]
+  }
+
+
+  {
+    "id": "4",
+    "__typename": "TaskMetaData",
+    "createdAt": "2019-07-16T12:30:02.548Z",
+    "description": "Browse and review product lisitng on market place",
+    "taskMetaDataReminderId": "2",
+    "title": "Review Product listingss",
+    "updatedAt": "2019-07-16T12:30:02.548Z",
+    "groupsCanAccess": [
+    "user"
+    ]
+  }
+
+
+  {
+    "id": "5",
+    "__typename": "TaskMetaData",
+    "createdAt": "2019-07-16T12:30:02.548Z",
+    "description": "Send the SEO and adwords report to manager",
+    "taskMetaDataReminderId": "2",
+    "title": "SEO Reports",
+    "updatedAt": "2019-07-16T12:30:02.548Z",
+    "groupsCanAccess": [
+    "user"
+    ]
+  }
+
+  {
+    "id": "6",
+    "__typename": "TaskMetaData",
+    "createdAt": "2019-07-16T12:30:02.526Z",
+    "description": "Have career growth plan in place",
+    "taskMetaDataReminderId": "4",
+    "title": "CGP Preperation",
+    "updatedAt": "2019-07-16T12:30:02.526Z",
+    "groupsCanAccess": [
+    "user"
+    ]
+  }
+  
+  {
+    "id": "7",
+    "__typename": "TaskMetaData",
+    "createdAt": "2019-07-16T12:30:02.526Z",
+    "description": "Publish one or more whitepaper on product retention",
+    "taskMetaDataReminderId": "4",
+    "title": "Whitepaper",
+    "updatedAt": "2019-07-16T12:30:02.526Z",
+    "groupsCanAccess": [
+    "user"
+    ]
+  }

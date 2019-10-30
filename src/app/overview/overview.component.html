@@ -1,0 +1,16 @@
+<div >
+    <table class="table" *ngFor="let customer of dashboardMap | keyvalue">
+            <thead >
+              <tr>
+                <th>Customer Name</th>
+                <th *ngFor="let task of customer.value" >{{task.title}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{customer.key}}</td>
+                <td *ngFor="let task of customer.value" [className]="task.status ? 'success' : 'danger'"></td>
+              </tr>      
+            </tbody>
+          </table>
+</div>

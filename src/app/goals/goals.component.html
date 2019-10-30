@@ -1,0 +1,89 @@
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-start">
+        <li class="page-item">
+            <a class="page-link" (click)="displayPrevious()">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">{{year}} - Date {{displayDate}}</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" (click)="displayNext()">Next</a>
+        </li>
+    </ul>
+</nav>
+
+<div id="accordion">
+    <div *ngFor="let reminder of allReminders">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" (data-target)="reminder.customer"
+                        aria-expanded="true" (aria-controls)="reminder.customer">
+                        {{reminder.customer}}
+                    </button>
+                </h5>
+            </div>
+
+            <div (id)="reminder.customer" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div *ngFor="let task of reminder.tasks.items | keyvalue">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{task.value.title}}</h5>
+                                    <div>
+                                        <p class="card-text">{{task.value.description}}</p>
+                                        <p></p>
+                      <div *ngFor="let mandatorycomment of task.value.mandatorycomment.items">
+  
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" #details placeholder="Add Details"
+                            aria-label="Add Details" aria-describedby="basic-addon2" value="{{mandatorycomment.content}}">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button"
+                              (click)="addMandatoryComment(mandatorycomment.id,details.value)">Update {{mandatorycomment.title}}</button>
+                          </div>
+                        </div>
+  
+  
+                      </div>
+                                    </div>
+                                    <p></p>
+                                    <div>
+                                        <button (click)="onClickMe(task.value.id,task.value.status)"
+                                            class="btn btn-primary">
+                                            {{ task.value.status == true ? 'Undo' : 'Mark as complete' }}
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-transparent border-success">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" #newComment placeholder="Add comments"
+                                            aria-label="Add comments" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button"
+                                                (click)="addComment(task.value.id,newComment.value)">Add
+                                                Comment</button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div *ngFor="let comment of task.value.comments.items | keyvalue">
+                                            <p>
+                                                <i>{{comment.value.addedby}} </i> says <b>{{comment.value.content}}</b>
+                                                ~
+                                                <i>{{comment.value.addedon |  dateFormat}} </i>
+                                            </p>
+                                            <p></p>
+                                            <p>
+                                                <a (click)="removeComent(comment.value.id)">remove comment</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,101 @@
+# This is reminder model which will contain multiple tasks. Each remider has a frequency associated with it
+# Auth attribute ensures that only owner of the reminders can access them
+type Reminder @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  user: String!
+  customer: String!
+  start: AWSDateTime!
+  month: Int!
+  week: Int!
+  year: Int!
+  additionalAttribute: String!
+  type: frequency!
+  tasks: [Task] @connection(name: "ReminderTasks")
+}
+
+#Each reminder has one or more multiple tasks. Each task as one or more optional comments and one or more mandatory comments
+type Task @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  title: String!
+  description: String!
+  status: Boolean!
+  reminder: Reminder @connection(name: "ReminderTasks")
+  comments: [Comment] @connection(name: "TaskComments")
+  mandatorycomment: [MandatoryComment] @connection(name: "TaskMandatoryComments")
+}
+
+#This is schema for comment assiciated with comments
+type Comment @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  content: String,
+  addedby: String,
+  addedon: AWSDateTime!
+  post: Task @connection(name: "TaskComments")
+}
+
+#This is schema for comment assiciated with comments. It has additional attribute names content to be displayed on the UI control
+type MandatoryComment @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  title: String
+  content: String,
+  addedby: String,
+  addedon: AWSDateTime!
+  task: Task @connection(name: "TaskMandatoryComments")
+}
+
+# Enum for frequency
+enum frequency {
+  WEEKLY
+  MONTHLY
+  QUARTERLY
+  YEARLY
+  ADHOC
+}
+
+# this is model for customer/group and its assiciation with the application user
+# Only users with Admin group can add/remove/update objects 
+# for all other users mentioned in groupsCanAccess only read operation is permitted.
+type Customer @model @auth(rules: [
+    { allow: groups, groupsField: "groupsCanAccess", operations: [read] }
+    { allow: groups, groups: ["Admin"] }
+    ]){
+  id: ID!
+  customername: String!
+  user: String!
+  groupsCanAccess: [String]!
+}
+
+# this is metadata type for creating Reminders
+type ReminderMetaData @model @auth(rules: [
+    { allow: groups, groupsField: "groupsCanAccess", operations: [read] }
+    { allow: groups, groups: ["Admin"] }
+    ]) {
+  id: ID!
+  type: frequency!
+  tasks: [TaskMetaData] @connection(name: "ReminderTasksMeta")
+  groupsCanAccess: [String]!
+}
+
+# this is metadata type for creating taks
+type TaskMetaData @model @auth(rules: [
+    { allow: groups, groupsField: "groupsCanAccess", operations: [read] }
+    { allow: groups, groups: ["Admin"] }
+    ]) {
+  id: ID!
+  title: String!
+  description: String!
+  reminder: ReminderMetaData @connection(name: "ReminderTasksMeta")
+  mandatorycomments: [MandatoryCommentMetaData] @connection(name: "TaskMandatoryCommentsMeta")
+  groupsCanAccess: [String]!
+}
+
+# this is metadata type for creating mandatory tasks
+type MandatoryCommentMetaData @model @auth(rules: [
+    { allow: groups, groupsField: "groupsCanAccess", operations: [read] }
+    { allow: groups, groups: ["Admin"] }
+    ]){
+  id: ID!
+  title: String
+  task: TaskMetaData @connection(name: "TaskMandatoryCommentsMeta")
+  groupsCanAccess: [String]!
+}

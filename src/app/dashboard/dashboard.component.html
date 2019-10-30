@@ -1,0 +1,59 @@
+<div class="jumbotron">
+  <div>
+    <h1 class="display-6">Welcome to Team Task tracker</h1>
+  </div>
+  <p></p>
+  <p class="lead">You can now keep track of all the weekly and monthly activities for your customers. Track individual goals on yearly basis.</p>
+  <p></p>
+  <p></p>
+  <hr class="my-4">
+  <p>Visit the the weekly and monthly task items to update the status of each activity</p>
+  <p></p>
+
+  <div class="alert alert-primary" role="alert">Weekly Tasks
+    <p class="lead">
+
+      <button *ngFor="let weeklyreminder of dashboardWeeklyData" type="button" class="btn btn-primary"
+        [routerLink]="[ '/weeklytasks' ]">
+        {{weeklyreminder.customer}} <span class="badge badge-light">{{weeklyreminder.tasks.items.length}}</span>
+
+      </button>
+    </p>
+  </div>
+  <div class="alert alert-success" role="alert">Monthly Tasks
+    <p class="lead">
+      <button *ngFor="let monhtlyreminder of dashboardMonthlyData" type="button" class="btn btn-primary"
+        [routerLink]="[ '/monthlytasks' ]">
+        {{monhtlyreminder.customer}} <span class="badge badge-light">{{monhtlyreminder.tasks.items.length}}</span>
+
+      </button>
+    </p>
+  </div>
+  <div class="alert alert-primary" role="alert">Team Goals
+    <p class="lead">
+
+      <button *ngFor="let yearlyreminder of dashboardYearlyData" type="button" class="btn btn-primary"
+        [routerLink]="[ '/goals' ]">
+        {{yearlyreminder.customer}} <span class="badge badge-light">{{yearlyreminder.tasks.items.length}}</span>
+
+      </button>
+    </p>
+  </div>
+
+</div>
+<div>
+  <table class="table" *ngFor="let customer of dashboardMap | keyvalue">
+    <thead>
+      <tr>
+        <th>Customer Name</th>
+        <th *ngFor="let task of customer.value">{{task.title}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{customer.key}}</td>
+        <td *ngFor="let task of customer.value" [className]="task.status ? 'success' : 'danger'"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

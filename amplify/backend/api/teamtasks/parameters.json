@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "teamtasks",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authteamtasksf9538190",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

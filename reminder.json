@@ -1,0 +1,32 @@
+[
+{
+  "__typename": "ReminderMetaData",
+  "createdAt": "2019-07-16T12:29:54.714Z",
+  "id": "1",
+  "type": "WEEKLY",
+  "updatedAt": "2019-07-16T12:29:54.714Z",
+  "groupsCanAccess": [
+    "user"
+  ]
+},
+{
+  "__typename": "ReminderMetaData",
+  "createdAt": "2019-07-16T12:29:54.714Z",
+  "id": "2",
+  "type": "MONTHLY",
+  "updatedAt": "2019-07-16T12:29:54.714Z",
+  "groupsCanAccess": [
+    "user"
+  ]
+},
+{
+  "__typename": "ReminderMetaData",
+  "createdAt": "2019-07-16T12:29:54.714Z",
+  "id": "4",
+  "type": "YEARLY",
+  "updatedAt": "2019-07-16T12:29:54.714Z",
+  "groupsCanAccess": [
+    "user"
+  ]
+}
+]

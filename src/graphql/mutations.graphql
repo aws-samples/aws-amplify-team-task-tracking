@@ -1,0 +1,592 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateReminder($input: CreateReminderInput!) {
+  createReminder(input: $input) {
+    id
+    user
+    customer
+    start
+    month
+    week
+    year
+    additionalAttribute
+    type
+    tasks {
+      items {
+        id
+        title
+        description
+        status
+      }
+      nextToken
+    }
+  }
+}
+mutation UpdateReminder($input: UpdateReminderInput!) {
+  updateReminder(input: $input) {
+    id
+    user
+    customer
+    start
+    month
+    week
+    year
+    additionalAttribute
+    type
+    tasks {
+      items {
+        id
+        title
+        description
+        status
+      }
+      nextToken
+    }
+  }
+}
+mutation DeleteReminder($input: DeleteReminderInput!) {
+  deleteReminder(input: $input) {
+    id
+    user
+    customer
+    start
+    month
+    week
+    year
+    additionalAttribute
+    type
+    tasks {
+      items {
+        id
+        title
+        description
+        status
+      }
+      nextToken
+    }
+  }
+}
+mutation CreateTask($input: CreateTaskInput!) {
+  createTask(input: $input) {
+    id
+    title
+    description
+    status
+    reminder {
+      id
+      user
+      customer
+      start
+      month
+      week
+      year
+      additionalAttribute
+      type
+      tasks {
+        nextToken
+      }
+    }
+    comments {
+      items {
+        id
+        content
+        addedby
+        addedon
+      }
+      nextToken
+    }
+    mandatorycomment {
+      items {
+        id
+        title
+        content
+        addedby
+        addedon
+      }
+      nextToken
+    }
+  }
+}
+mutation UpdateTask($input: UpdateTaskInput!) {
+  updateTask(input: $input) {
+    id
+    title
+    description
+    status
+    reminder {
+      id
+      user
+      customer
+      start
+      month
+      week
+      year
+      additionalAttribute
+      type
+      tasks {
+        nextToken
+      }
+    }
+    comments {
+      items {
+        id
+        content
+        addedby
+        addedon
+      }
+      nextToken
+    }
+    mandatorycomment {
+      items {
+        id
+        title
+        content
+        addedby
+        addedon
+      }
+      nextToken
+    }
+  }
+}
+mutation DeleteTask($input: DeleteTaskInput!) {
+  deleteTask(input: $input) {
+    id
+    title
+    description
+    status
+    reminder {
+      id
+      user
+      customer
+      start
+      month
+      week
+      year
+      additionalAttribute
+      type
+      tasks {
+        nextToken
+      }
+    }
+    comments {
+      items {
+        id
+        content
+        addedby
+        addedon
+      }
+      nextToken
+    }
+    mandatorycomment {
+      items {
+        id
+        title
+        content
+        addedby
+        addedon
+      }
+      nextToken
+    }
+  }
+}
+mutation CreateComment($input: CreateCommentInput!) {
+  createComment(input: $input) {
+    id
+    content
+    addedby
+    addedon
+    post {
+      id
+      title
+      description
+      status
+      reminder {
+        id
+        user
+        customer
+        start
+        month
+        week
+        year
+        additionalAttribute
+        type
+      }
+      comments {
+        nextToken
+      }
+      mandatorycomment {
+        nextToken
+      }
+    }
+  }
+}
+mutation UpdateComment($input: UpdateCommentInput!) {
+  updateComment(input: $input) {
+    id
+    content
+    addedby
+    addedon
+    post {
+      id
+      title
+      description
+      status
+      reminder {
+        id
+        user
+        customer
+        start
+        month
+        week
+        year
+        additionalAttribute
+        type
+      }
+      comments {
+        nextToken
+      }
+      mandatorycomment {
+        nextToken
+      }
+    }
+  }
+}
+mutation DeleteComment($input: DeleteCommentInput!) {
+  deleteComment(input: $input) {
+    id
+    content
+    addedby
+    addedon
+    post {
+      id
+      title
+      description
+      status
+      reminder {
+        id
+        user
+        customer
+        start
+        month
+        week
+        year
+        additionalAttribute
+        type
+      }
+      comments {
+        nextToken
+      }
+      mandatorycomment {
+        nextToken
+      }
+    }
+  }
+}
+mutation CreateMandatoryComment($input: CreateMandatoryCommentInput!) {
+  createMandatoryComment(input: $input) {
+    id
+    title
+    content
+    addedby
+    addedon
+    task {
+      id
+      title
+      description
+      status
+      reminder {
+        id
+        user
+        customer
+        start
+        month
+        week
+        year
+        additionalAttribute
+        type
+      }
+      comments {
+        nextToken
+      }
+      mandatorycomment {
+        nextToken
+      }
+    }
+  }
+}
+mutation UpdateMandatoryComment($input: UpdateMandatoryCommentInput!) {
+  updateMandatoryComment(input: $input) {
+    id
+    title
+    content
+    addedby
+    addedon
+    task {
+      id
+      title
+      description
+      status
+      reminder {
+        id
+        user
+        customer
+        start
+        month
+        week
+        year
+        additionalAttribute
+        type
+      }
+      comments {
+        nextToken
+      }
+      mandatorycomment {
+        nextToken
+      }
+    }
+  }
+}
+mutation DeleteMandatoryComment($input: DeleteMandatoryCommentInput!) {
+  deleteMandatoryComment(input: $input) {
+    id
+    title
+    content
+    addedby
+    addedon
+    task {
+      id
+      title
+      description
+      status
+      reminder {
+        id
+        user
+        customer
+        start
+        month
+        week
+        year
+        additionalAttribute
+        type
+      }
+      comments {
+        nextToken
+      }
+      mandatorycomment {
+        nextToken
+      }
+    }
+  }
+}
+mutation CreateCustomer($input: CreateCustomerInput!) {
+  createCustomer(input: $input) {
+    id
+    customername
+    user
+    groupsCanAccess
+  }
+}
+mutation UpdateCustomer($input: UpdateCustomerInput!) {
+  updateCustomer(input: $input) {
+    id
+    customername
+    user
+    groupsCanAccess
+  }
+}
+mutation DeleteCustomer($input: DeleteCustomerInput!) {
+  deleteCustomer(input: $input) {
+    id
+    customername
+    user
+    groupsCanAccess
+  }
+}
+mutation CreateReminderMetaData($input: CreateReminderMetaDataInput!) {
+  createReminderMetaData(input: $input) {
+    id
+    type
+    tasks {
+      items {
+        id
+        title
+        description
+        groupsCanAccess
+      }
+      nextToken
+    }
+    groupsCanAccess
+  }
+}
+mutation UpdateReminderMetaData($input: UpdateReminderMetaDataInput!) {
+  updateReminderMetaData(input: $input) {
+    id
+    type
+    tasks {
+      items {
+        id
+        title
+        description
+        groupsCanAccess
+      }
+      nextToken
+    }
+    groupsCanAccess
+  }
+}
+mutation DeleteReminderMetaData($input: DeleteReminderMetaDataInput!) {
+  deleteReminderMetaData(input: $input) {
+    id
+    type
+    tasks {
+      items {
+        id
+        title
+        description
+        groupsCanAccess
+      }
+      nextToken
+    }
+    groupsCanAccess
+  }
+}
+mutation CreateTaskMetaData($input: CreateTaskMetaDataInput!) {
+  createTaskMetaData(input: $input) {
+    id
+    title
+    description
+    reminder {
+      id
+      type
+      tasks {
+        nextToken
+      }
+      groupsCanAccess
+    }
+    mandatorycomments {
+      items {
+        id
+        title
+        groupsCanAccess
+      }
+      nextToken
+    }
+    groupsCanAccess
+  }
+}
+mutation UpdateTaskMetaData($input: UpdateTaskMetaDataInput!) {
+  updateTaskMetaData(input: $input) {
+    id
+    title
+    description
+    reminder {
+      id
+      type
+      tasks {
+        nextToken
+      }
+      groupsCanAccess
+    }
+    mandatorycomments {
+      items {
+        id
+        title
+        groupsCanAccess
+      }
+      nextToken
+    }
+    groupsCanAccess
+  }
+}
+mutation DeleteTaskMetaData($input: DeleteTaskMetaDataInput!) {
+  deleteTaskMetaData(input: $input) {
+    id
+    title
+    description
+    reminder {
+      id
+      type
+      tasks {
+        nextToken
+      }
+      groupsCanAccess
+    }
+    mandatorycomments {
+      items {
+        id
+        title
+        groupsCanAccess
+      }
+      nextToken
+    }
+    groupsCanAccess
+  }
+}
+mutation CreateMandatoryCommentMetaData(
+  $input: CreateMandatoryCommentMetaDataInput!
+) {
+  createMandatoryCommentMetaData(input: $input) {
+    id
+    title
+    task {
+      id
+      title
+      description
+      reminder {
+        id
+        type
+        groupsCanAccess
+      }
+      mandatorycomments {
+        nextToken
+      }
+      groupsCanAccess
+    }
+    groupsCanAccess
+  }
+}
+mutation UpdateMandatoryCommentMetaData(
+  $input: UpdateMandatoryCommentMetaDataInput!
+) {
+  updateMandatoryCommentMetaData(input: $input) {
+    id
+    title
+    task {
+      id
+      title
+      description
+      reminder {
+        id
+        type
+        groupsCanAccess
+      }
+      mandatorycomments {
+        nextToken
+      }
+      groupsCanAccess
+    }
+    groupsCanAccess
+  }
+}
+mutation DeleteMandatoryCommentMetaData(
+  $input: DeleteMandatoryCommentMetaDataInput!
+) {
+  deleteMandatoryCommentMetaData(input: $input) {
+    id
+    title
+    task {
+      id
+      title
+      description
+      reminder {
+        id
+        type
+        groupsCanAccess
+      }
+      mandatorycomments {
+        nextToken
+      }
+      groupsCanAccess
+    }
+    groupsCanAccess
+  }
+}

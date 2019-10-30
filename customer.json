@@ -1,0 +1,13 @@
+[
+{
+  "__typename": "Customer",
+  "createdAt": "2019-08-26T11:21:11.007Z",
+  "customername": "Delta Echo",
+  "groupsCanAccess": [
+    "user"
+  ],
+  "id": "1",
+  "updatedAt": "2019-08-26T11:21:11.007Z",
+  "user": "some-valid-email@amazon.com"
+}
+]

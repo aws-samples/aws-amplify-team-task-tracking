@@ -1,0 +1,24 @@
+
+  {
+    "id": "1",
+    "__typename": "MandatoryCommentMetaData",
+    "createdAt": "2019-07-29T11:02:26.077Z",
+    "mandatoryCommentMetaDataTaskId": "7",
+    "title": "Paper Name 1",
+    "updatedAt": "2019-07-29T11:02:26.077Z",
+    "groupsCanAccess": [
+    "user"
+    ]
+  }
+
+  {
+    "id": "2",
+    "__typename": "MandatoryCommentMetaData",
+    "createdAt": "2019-07-29T11:02:26.077Z",
+    "mandatoryCommentMetaDataTaskId": "7",
+    "title": "Paper Name 2",
+    "updatedAt": "2019-07-29T11:02:26.077Z",
+    "groupsCanAccess": [
+    "user"
+    ]
+  }
