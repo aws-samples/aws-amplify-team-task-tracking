@@ -10,7 +10,7 @@ Team task project can help you track those items and ensure all team members act
 
 We would be using following architecture to develop this tool
 
-![AppsyncTeamTasks](https://user-images.githubusercontent.com/5582133/67894816-59f29800-fb7f-11e9-89fa-ec6072509219.jpg) 
+![AppsyncTeamTasks](https://user-images.githubusercontent.com/5582133/69314536-69cf3a80-0c5a-11ea-9513-8b752697ff2b.jpg)
 
 
 
