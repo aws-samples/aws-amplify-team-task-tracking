@@ -133,155 +133,16 @@ ReminderMetaData-xxxxxxxx-dev
 }
 ```
 
+The above meta schema is present in the file [reminder.json](reminder.json)
+It creates meta data for reminders (Weekly , monthly and yearly)
 
-TaskMetaData-xxxxxxxx-dev
+Similarly add data from following files in respective tables mentioned below.
 
-
-
-```
-{
-"id": "1",
-"__typename": "TaskMetaData",
-"createdAt": "2019-07-16T12:30:02.526Z",
-"description": "Review customer support tickets for this week and ensure there are no escalations",
-"taskMetaDataReminderId": "1",
-"title": "Review support tickets",
-"updatedAt": "2019-07-16T12:30:02.526Z",
-"groupsCanAccess": [
-"user"
-]
-}
-
-{
-"id": "2",
-"__typename": "TaskMetaData",
-"createdAt": "2019-07-16T12:30:02.526Z",
-"description": "Review highest volume channel in CRM",
-"taskMetaDataReminderId": "1",
-"title": "Review Channel",
-"updatedAt": "2019-07-16T12:30:02.526Z",
-"groupsCanAccess": [
-"user"
-]
-}
+* Populate TaskMetaData-xxxxxxxx-dev table using json from file [tasks.json](tasks.json). This will populate meta data to create tasks for monthly, weekly, yearly reminders
+* Populate MandatoryCommentMetaData-xxxxxxx-dev table using json from file [mandatorycomments.json](mandatorycomments.json). This will populate meta data for tasks which have mandatory comments 
+* Map users who have registered to customer/group by adding data in Customer-xxxxxx-dev table [customer.json] (customer.json). 
 
 
-{
-"id": "3",
-"__typename": "TaskMetaData",
-"createdAt": "2019-07-16T12:30:02.526Z",
-"description": "Categorize and review leads by sales revenue",
-"taskMetaDataReminderId": "1",
-"title": "Review leads",
-"updatedAt": "2019-07-16T12:30:02.526Z",
-"groupsCanAccess": [
-"user"
-]
-}
-
-
-{
-"id": "4",
-"__typename": "TaskMetaData",
-"createdAt": "2019-07-16T12:30:02.548Z",
-"description": "Browse and review product lisitng on market place",
-"taskMetaDataReminderId": "2",
-"title": "Review Product listingss",
-"updatedAt": "2019-07-16T12:30:02.548Z",
-"groupsCanAccess": [
-"user"
-]
-}
-
-
-{
-"id": "5",
-"__typename": "TaskMetaData",
-"createdAt": "2019-07-16T12:30:02.548Z",
-"description": "Send the SEO and adwords report to manager",
-"taskMetaDataReminderId": "2",
-"title": "SEO Reports",
-"updatedAt": "2019-07-16T12:30:02.548Z",
-"groupsCanAccess": [
-"user"
-]
-}
-
-{
-"id": "6",
-"__typename": "TaskMetaData",
-"createdAt": "2019-07-16T12:30:02.526Z",
-"description": "Have career growth plan in place",
-"taskMetaDataReminderId": "4",
-"title": "CGP Preperation",
-"updatedAt": "2019-07-16T12:30:02.526Z",
-"groupsCanAccess": [
-"user"
-]
-}
-
-{
-"id": "7",
-"__typename": "TaskMetaData",
-"createdAt": "2019-07-16T12:30:02.526Z",
-"description": "Publish a whitepaper on product retention",
-"taskMetaDataReminderId": "4",
-"title": "Whitepaper",
-"updatedAt": "2019-07-16T12:30:02.526Z",
-"groupsCanAccess": [
-"user"
-]
-}
-```
-
-
-MandatoryCommentMetaData-xxxxxxx-dev
-
-
-```
-{
-"id": "1",
-"__typename": "MandatoryCommentMetaData",
-"createdAt": "2019-07-29T11:02:26.077Z",
-"mandatoryCommentMetaDataTaskId": "7",
-"title": "Paper Name 1",
-"updatedAt": "2019-07-29T11:02:26.077Z",
-"groupsCanAccess": [
-"user"
-]
-}
-
-{
-"id": "2",
-"__typename": "MandatoryCommentMetaData",
-"createdAt": "2019-07-29T11:02:26.077Z",
-"mandatoryCommentMetaDataTaskId": "7",
-"title": "Paper Name 2",
-"updatedAt": "2019-07-29T11:02:26.077Z",
-"groupsCanAccess": [
-"user"
-]
-}
-```
-
-
-
-Map users who have registered to customer/group by adding data in 
-
-```
-
-{
-"__typename": "Customer",
-"createdAt": "2019-08-26T11:21:11.007Z",
-"customername": "Delta Echo",
-"groupsCanAccess": [
-"user"
-],
-"id": "1",
-"updatedAt": "2019-08-26T11:21:11.007Z",
-"user": "dummyuser@amazon.com"
-}
-```
 
 
 
