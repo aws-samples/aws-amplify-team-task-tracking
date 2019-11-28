@@ -1,4 +1,4 @@
-LAB2 : Adding Amplify resources
+# LAB2 : Adding Amplify resources
 
 
 Start by initialising amplify project. 
