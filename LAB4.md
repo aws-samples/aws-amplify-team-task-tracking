@@ -1,4 +1,4 @@
-4. LAB4 : Create CI/CD Pipelines
+# 4. LAB4 : Create CI/CD Pipelines
 
 Once you are done with upload the files on github(or code commit) repository , you will now setup the pipeline for automated build and deployment.
 Create a branch in git representing dev. 
@@ -74,5 +74,4 @@ Choose to mark the one of the task as complete. Also add/remove comments for a t
 
 
 Conclusion : 
-Using Amplify I can now create a secured application using congnito. Using appsync that uses  GraphQL I can  make it easy for applications to get exactly the data they need.  I also use  subscribe to new comments using subscription which is easy to consume.  
-
+Using Amplify you can now create a secured application completely running in serverless technologies. Using appsync that uses  GraphQL you can  make it easy for web/mobile client to get the data they need via graphql query.  You also learnt to use  subscription to listen for changes on data
