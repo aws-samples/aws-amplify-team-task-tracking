@@ -292,8 +292,12 @@ Choose following options. Chosen option in bold
 > ? Enter the file name for the generated code **src/app/API.service.ts**
 
 
-Once the operation is complete,  copy the content from  aws-export.js to aws-export.ts
+You can see a folder named Amplify. This is the folder which is managed by amplify tool which dynamically generates a cloudfromation template and updates it based on the resouces added via Amplify CLI
+
+Once the operation is complete,  copy the content from  aws-export.js to aws-export.ts. We will automate this step in coming section.
 
 
 In the subsequent sections, you will write the functional logic and consume the amplify API.
+
+
 
