@@ -225,7 +225,9 @@ import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
 export class AppModule { }
 ```
 
-Angular will also create e2e folder for end to end testing 
+Angular will also create e2e folder for end to end testing .
+
+src directory will contain app directory which will have the source code for all the angular components created above
 
 
 
