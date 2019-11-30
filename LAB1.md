@@ -225,6 +225,10 @@ import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
 export class AppModule { }
 ```
 
+Angular will also create e2e folder for end to end testing 
+
+
+
 
 You have completed the client side angular code and now will use amplify library to provision backend infrastructure as well
 
