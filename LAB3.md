@@ -1,8 +1,6 @@
 # 3. LAB3 : Adding application logic  
 
-Start with authentication.  
-
-Update the app.component.ts as following
+ Update the app.component.ts as following. Following code is written to redirect to /dashboard route post login
 
 
 ```
@@ -264,7 +262,7 @@ this.api.OnCreateCommentListener.subscribe(async (comment) => {
 });
 ```
 
-Add following lines in src/polyfills.ts
+Currently, the newest versions of Angular (6+) do not include shims for ‘global’ or ‘process’ which were provided in previous versions. Add the following to your polyfills.ts file to recreate them ![Doc](https://aws-amplify.github.io/docs/js/angular)
 
 
 ```
