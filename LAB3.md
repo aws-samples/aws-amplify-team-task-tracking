@@ -75,7 +75,11 @@ Add a logout link in app.component.html
 </li>
 ```
 
+Add a if condition to  show menu when the user  logs in
 
+```
+<nav class="navbar navbar-expand-lg navbar-light bg-light" *ngIf=loggedinuser>
+```
 
 You can now test the application locally by running ng serve
 
