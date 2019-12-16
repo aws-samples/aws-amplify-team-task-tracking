@@ -29,7 +29,7 @@ Prerequisite (Things you need to have before you start building)
 4. Amplify CLI - Installation instructions - https://aws-amplify.github.io/docs/cli-toolchain/quickstart
 
 
-You need to  install NPM 6.10.0+ , Node v11.14.0+ , Angular CLI version  8.0.6+ , Angular version 8.0.3+  and amplify version 1.2.4+
+You need to  install NPM 6.10.0+ , Node v11.14.0+ , Angular CLI version  8.0.6+ , Angular version 8.0.3+  and amplify cli version 1.2.4+
 
 
 This exercise is divided into 3 Labs
