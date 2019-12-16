@@ -42,10 +42,10 @@ Once the command is run successfully , you will be displayed a message
 
 
 
-A new file will be created with name aws-export.js
+A new file will be created with name aws-exports.js
 This is a dynamically generated file which has the configuration to ensure the javascript angular module can communicate with the API we will be developing.
 
-Since we are developing a TS project , we might need to copy the aws-export.js and create a new file with name aws-export.ts. We need to do this everytime we create/update/delete an serverside resource. You will automate this at later stage.
+Since we are developing a TS project , we might need to copy the aws-exports.js and create a new file with name aws-exports.ts. We need to do this everytime we create/update/delete an serverside resource. You will automate this at later stage.
 
 
 
