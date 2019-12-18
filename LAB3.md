@@ -81,6 +81,8 @@ Add a if condition to  show menu when the user  logs in
 <nav class="navbar navbar-expand-lg navbar-light bg-light" *ngIf=loggedinuser>
 ```
 
+Do not forget to copy the content from aws-export.js to aws-export.ts 
+
 You can now test the application locally by running ng serve
 
 
