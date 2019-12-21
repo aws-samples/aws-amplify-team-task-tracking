@@ -6,7 +6,7 @@
 
 When we work as a team we usually end up identifying activities which needs to be done on repeating basis. These activities needs to be tracked and ensured that we complete them on time.
 
-Hence we will be bulding a team task tracking tool. This tool dynamically creates  weekly, monthly and yearly  tasks based on meta. 
+In the following labs we will be bulding a team task tracking tool. This tool dynamically creates  weekly, monthly and yearly  tasks based on meta. 
 
 This project can help you track those items and ensure all team members act on customer specific actions and Yearly Goals on regular basis.
 
@@ -42,7 +42,7 @@ This exercise is divided into 3 Labs
 
 You need to complete LAB exercise in sequence (LAB1 followed by LAB2 followed by LAB3)
 
-
+* [Proceed to LAB 1](LAB1.md)
 
 ## License
 
