@@ -42,7 +42,7 @@ This exercise is divided into 3 Labs
 
 You need to complete LAB exercise in sequence (LAB1 followed by LAB2 followed by LAB3)
 
-* [Proceed to LAB 1](LAB1.md)
+[Proceed to LAB 1](LAB1.md)
 
 ## License
 
