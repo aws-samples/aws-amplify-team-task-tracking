@@ -234,3 +234,4 @@ src directory will contain app directory which will have the source code for all
 
 You have completed the client side angular code and now will use amplify library to provision backend infrastructure as well
 
+[Proceed to Lab 2](LAB2.md)
