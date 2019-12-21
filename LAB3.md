@@ -149,7 +149,14 @@ Similarly add data from following files in respective tables mentioned below.
 
 
 
-Also create two groups in cognito console and assign either Admin or User or both group to the registered user.
+Create two groups in cognito console and assign either Admin or User or both group to the registered user. 
+
+Click [here](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-user-groups.html) to learn how to create group in cognito
+
+Click [here](https://docs.aws.amazon.com/cognito/latest/developerguide/how-to-manage-user-accounts.html)  to know how to assign groups to user 
+
+
+
 Automate the assigning of user group by writing a post confirmation trigger lambda function. Sample code below
 
 
