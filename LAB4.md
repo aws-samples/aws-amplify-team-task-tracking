@@ -75,3 +75,6 @@ Choose to mark the one of the task as complete. Also add/remove comments for a t
 
 Conclusion : 
 Using Amplify you can now create a secured application completely running in serverless technologies. Using appsync that uses  GraphQL you can  make it easy for web/mobile client to get the data they need via graphql query.  You also learnt to use  subscription to listen for changes on data
+
+
+[Proceed to LAB 5](LAB5.MD)
