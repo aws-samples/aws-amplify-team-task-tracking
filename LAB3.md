@@ -144,7 +144,7 @@ Similarly add data from following files in respective tables mentioned below.
 
 * Populate TaskMetaData-xxxxxxxx-dev table using json from file [tasks.json](tasks.json). This will populate meta data to create tasks for monthly, weekly, yearly reminders
 * Populate MandatoryCommentMetaData-xxxxxxx-dev table using json from file [mandatorycomments.json](mandatorycomments.json). This will populate meta data for tasks which have mandatory comments 
-* Map users who have registered to customer/group by adding data in Customer-xxxxxx-dev table [customer.json](customer.json). 
+* Map users who have registered to customer/group by adding data in Customer-xxxxxx-dev table [customer.json](customer.json). Ensure you use the same  email you used to create the account 
 
 
 
