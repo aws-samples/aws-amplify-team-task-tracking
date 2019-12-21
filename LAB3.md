@@ -294,3 +294,5 @@ Now will re-publish the angular application by running
 ```
 amplify publish
 ```
+
+[Proceed to Lab 4](LAB4.md)
