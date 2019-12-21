@@ -1,5 +1,4 @@
-If you   wish to delete the application, 
-In order to delete the stack run following command
+If you   wish to delete the application, run following command
 
 ```
 amplify delete
