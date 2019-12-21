@@ -299,5 +299,4 @@ Once the operation is complete,  copy the content from  aws-export.js to aws-exp
 
 In the subsequent sections, you will write the functional logic and consume the amplify API.
 
-
-
+[Proceed to Lab 3](LAB3.md)
