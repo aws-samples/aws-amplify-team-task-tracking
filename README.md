@@ -19,9 +19,17 @@ We would be using following architecture to develop this tool
 
 ![AppsyncTamTasks](https://user-images.githubusercontent.com/5582133/69803272-b50cbe80-1201-11ea-9a6d-eeac7ddce27a.jpg)
 
+### Screenshots
 
 
-Prerequisite (Things you need to have before you start building)
+![app-screenshot1](https://user-images.githubusercontent.com/5582133/67894814-59f29800-fb7f-11e9-8a0e-40b64031d8ab.png)
+
+
+![app-screenshot2](https://user-images.githubusercontent.com/5582133/67894815-59f29800-fb7f-11e9-87e0-ade821dc4e02.png)
+
+
+
+### Prerequisite (Things you need to have before you start building)
 
 1. NodeJS and NPM - Installation instructions - https://nodejs.org/en/download/
 2. Angular CLI - Installation instructions - https://angular.io/cli
@@ -33,7 +41,7 @@ You need to  install NPM 6.10.0+ , Node v11.14.0+ , Angular CLI version  8.0.6+ 
 
 
 
-This exercise is divided into 3 Labs
+### This exercise is divided into 3 Labs
 * [LAB1 : Creating Angular project](LAB1.md)
 * [LAB2 : Adding Amplify resources](LAB2.md)
 * [LAB3 : Adding application logic](LAB3.md)
