@@ -6,7 +6,7 @@
 
 When we work as a team we usually end up identifying activities which needs to be done on repeating basis. These activities needs to be tracked and ensured that we complete them on time.
 
-In the following labs we will be bulding a team task tracking tool. This tool dynamically creates  weekly, monthly and yearly  tasks based on meta. 
+In the following labs we will be building a team task tracking tool. This tool dynamically creates  weekly, monthly and yearly  tasks based on metadata. 
 
 This project can help you track those items and ensure all team members act on customer specific actions and Yearly Goals on regular basis.
 
