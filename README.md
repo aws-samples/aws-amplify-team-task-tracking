@@ -41,7 +41,7 @@ You need to  install NPM 6.10.0+ , Node v11.14.0+ , Angular CLI version  8.0.6+ 
 
 
 
-### This exercise is divided into 3 Labs
+### This exercise is divided into 5 Labs
 * [LAB1 : Creating Angular project](LAB1.md)
 * [LAB2 : Adding Amplify resources](LAB2.md)
 * [LAB3 : Adding application logic](LAB3.md)
