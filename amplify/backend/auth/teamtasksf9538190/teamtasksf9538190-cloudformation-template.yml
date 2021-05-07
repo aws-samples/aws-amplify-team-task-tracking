@@ -305,7 +305,7 @@ Resources:
             - ' }'
             - '};'
       Handler: index.handler
-      Runtime: nodejs10.x
+      Runtime: nodejs14.x
       Timeout: '300'
       Role: !GetAtt 
         - UserPoolClientRole
@@ -431,7 +431,7 @@ Resources:
 
 
       Handler: index.handler
-      Runtime: nodejs10.x
+      Runtime: nodejs14.x
       Timeout: '300'
       Role: !GetAtt 
         - UserPoolClientRole
@@ -560,7 +560,7 @@ Resources:
             - '} '
 
       Handler: index.handler
-      Runtime: nodejs10.x
+      Runtime: nodejs14.x
       Timeout: '300'
       Role: !GetAtt 
         - UserPoolClientRole
@@ -659,7 +659,7 @@ Resources:
             - '}'
 
       Handler: index.handler
-      Runtime: nodejs10.x
+      Runtime: nodejs14.x
       Timeout: '300'
       Role: !GetAtt 
         - UserPoolClientRole
